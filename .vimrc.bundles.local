@@ -1,2 +1,4 @@
 Plug 'altercation/vim-colors-solarized'
+Plug 'lambdatoast/elm.vim'
+Plug 'christoomey/vim-tmux-navigator'
 
