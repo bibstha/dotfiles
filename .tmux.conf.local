@@ -5,11 +5,6 @@ bind-key -n F7 previous-window
 bind-key -n F8 last-window
 bind-key -n F9 next-window
 
-# Enable mouse support in ~/.tmux.conf
-set-option -g mouse-select-pane on
-set-option -g mouse-select-window on
-set-window-option -g mode-mouse on
-
 # Setup 'v' to begin selection as in Vim
 bind-key -t vi-copy v begin-selection
 bind-key -t vi-copy y copy-pipe "reattach-to-user-namespace pbcopy"
