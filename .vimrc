@@ -1,3 +1,5 @@
+set shell=/bin/bash
+
 " Leader
 let mapleader = " "
 
@@ -80,12 +82,12 @@ if executable('ag')
 endif
 
 " Make it obvious where 80 characters is
-set textwidth=80
+set textwidth=120
 set colorcolumn=+1
 
 " Numbers
 set number
-set numberwidth=5
+set numberwidth=4
 
 " Tab completion
 " will insert tab at beginning of line,
@@ -132,11 +134,12 @@ let g:html_indent_tags = 'li\|p'
 set splitbelow
 set splitright
 
-" Quicker window movement
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-h> <C-w>h
-nnoremap <C-l> <C-w>l
+" " Quicker window movement
+" The following are replaced by vim-tmux-navigator
+" nnoremap <C-j> <C-w>j
+" nnoremap <C-k> <C-w>k
+" nnoremap <C-h> <C-w>h
+" nnoremap <C-l> <C-w>l
 
 " configure syntastic syntax checking to check on open as well as save
 let g:syntastic_check_on_open=1

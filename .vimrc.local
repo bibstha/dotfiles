@@ -20,9 +20,14 @@ cabbr <expr> %% expand('%:p:h')
 " map <C-n> :NERDTreeToggle<CR>
 let $PATH = "./bin:" . $PATH
 
+" easy copy and paste in clipboard
 noremap <Leader>y "*y
 noremap <Leader>p "*p
 noremap <Leader>Y "+y
 noremap <Leader>P "+p
 
+" Toggle highlight on / off
+:nnoremap <leader>h :set hlsearch! hlsearch?<CR>
+
 set shell=/bin/bash
+
