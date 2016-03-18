@@ -2,5 +2,4 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'lambdatoast/elm.vim'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'hashivim/vim-vagrant'
-Plug 'docker/docker' , {'rtp': '/contrib/syntax/vim/'}
-
+Plug 'ekalinin/Dockerfile.vim'
