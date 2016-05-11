@@ -16,6 +16,8 @@ if test -d /Applications/Postgres.app/Contents/Versions/9.4/bin
   set -gx PATH $PATH /Applications/Postgres.app/Contents/Versions/9.4/bin
 end
 
+set -gx PATH /usr/local/sbin $PATH
+
 set -gx JRUBY_OPTS --dev
 
 set -gx EDITOR /usr/local/bin/vim
