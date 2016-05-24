@@ -31,3 +31,4 @@ noremap <Leader>P "+p
 
 set shell=/bin/bash
 
+au BufReadPost Jenkinsfile set syntax=groovy
