@@ -33,3 +33,4 @@ set shell=/bin/bash
 
 au BufReadPost Jenkinsfile set syntax=groovy
 au BufReadPost Berksfile set syntax=ruby
+au BufReadPost Berksfile set syntax=elixir
