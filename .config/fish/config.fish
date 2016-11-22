@@ -6,6 +6,8 @@ set -q XDG_DATA_HOME
 # Load Oh My Fish configuration.
 source $OMF_PATH/init.fish
 
+set -gx OMF_CONFIG "$HOME/.config/omf"
+
 # Chruby
 if test -d /usr/local/share/chruby
   source /usr/local/share/chruby/chruby.fish
