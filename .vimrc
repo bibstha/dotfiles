@@ -80,6 +80,8 @@ if executable('ag')
   " ag is fast enough that CtrlP doesn't need to cache
   let g:ctrlp_use_caching = 0
 endif
+:nnoremap <leader>pf :CtrlP<CR>
+
 
 " Make it obvious where 80 characters is
 set textwidth=120
@@ -111,7 +113,7 @@ let g:Tlist_Ctags_Cmd="ctags --exclude='*.js'"
 map <Leader>ct :!ctags -R .<CR>
 
 " Switch between the last two files
-nnoremap <leader><leader> <c-^>
+nnoremap <leader><Tab> <c-^>
 
 " Get off my lawn
 nnoremap <Left> :echoe "Use h"<CR>
