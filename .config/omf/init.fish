@@ -1,4 +1,4 @@
-echo "Hi there, welcome"
+fortune | cowsay
 
 # Load fish files
 source "$OMF_CONFIG/alias.fish"
