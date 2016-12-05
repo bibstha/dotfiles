@@ -1,5 +1,5 @@
 " Color scheme
-set background=dark
+set background=light
 colorscheme solarized
 
 au BufReadPost * set relativenumber
