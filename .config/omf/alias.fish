@@ -6,8 +6,8 @@ balias pr 'stash pull-request'
 balias omfe 'vim $OMF_CONFIG/init.fish'
 
 # git
-balias p 'git pull'
-balias pu 'git push'
+balias pull 'git pull'
+balias push 'git push'
 
 # reno
 balias reno 'exe/reno'
