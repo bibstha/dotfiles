@@ -1,0 +1,7 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+	name = Bibek Shrestha
+	email = bibekshrestha@gmail.com
+[core]
+	excludesfile = /Users/bibekshrestha/.gitignore_global
