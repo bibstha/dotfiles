@@ -5,3 +5,8 @@
 	email = bibekshrestha@gmail.com
 [core]
 	excludesfile = /Users/bibekshrestha/.gitignore_global
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
