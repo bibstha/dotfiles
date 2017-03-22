@@ -10,3 +10,5 @@
 	br = branch
 	ci = commit
 	st = status
+[push]
+	default = current
