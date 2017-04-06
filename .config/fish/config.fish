@@ -1,3 +1,6 @@
+if not set -q fish_user_abbreviations
+  abbr_set
+end
 
 end
 
