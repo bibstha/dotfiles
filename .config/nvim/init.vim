@@ -51,11 +51,11 @@ call plug#begin('~/.local/share/nvim/plugged')
 " Define bundles via Github repos
 Plug 'christoomey/vim-run-interactive'
 Plug 'kchmck/vim-coffee-script'
-" Plug 'ctrlpvim/ctrlp.vim'
 Plug 'pbrisbin/vim-mkdir'
 Plug 'scrooloose/syntastic'
 Plug 'slim-template/vim-slim'
 Plug 'thoughtbot/vim-rspec'
+Plug 'tpope/vim-vinegar'
 Plug 'tpope/vim-bundler'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-eunuch'
@@ -103,6 +103,8 @@ autocmd! User FzfStatusLine call <SID>fzf_statusline()
 syntax enable
 set background=light
 colorscheme solarized
+
+noremap <Leader>r :source ~/.config/nvim/init.vim<CR>
 
 """"""""""""""""""""""""""""""""""""""""
 " Functions

@@ -24,6 +24,7 @@ abbr_add 'v=vim'
 abbr_add 'ev=vim ~/.vimrc'
 abbr_add 'et=vim ~/.tmux.conf'
 abbr_add 'efc=vim ~/.config/fish/config.fish'
+abbr_add 'efa=vim ~/.config/fish/abbreviations.fish'
 abbr_add 'eff=vim ~/.config/fish/functions'
 abbr_add 'ef=vim ~/.config/fish'
 
