@@ -10,6 +10,7 @@ abbr_add 'glg=git log-detail'
 abbr_add 'glb=git log-branch'
 abbr_add 'glgs=git log-summary'
 abbr_add 'ga=git add'
+abbr_add 'gap=git add -p'
 
 abbr_add 'gcm=git checkout master'
 abbr_add 'gch=git checkout'
