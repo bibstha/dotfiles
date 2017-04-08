@@ -51,6 +51,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 " Define bundles via Github repos
 Plug 'christoomey/vim-run-interactive'
+Plug 'christoomey/vim-tmux-navigator'
 Plug 'kchmck/vim-coffee-script'
 Plug 'pbrisbin/vim-mkdir'
 Plug 'scrooloose/syntastic'
@@ -105,8 +106,8 @@ syntax enable
 set background=light
 colorscheme solarized
 
-noremap <Leader>ec :e ~/.config/nvim/init.vim<CR>
-noremap <Leader>r :source ~/.config/nvim/init.vim<CR>
+noremap <Leader>efv :e ~/.config/nvim/init.vim<CR>
+noremap <Leader>sf :source ~/.config/nvim/init.vim<CR>
 noremap <Leader>te :terminal<CR>
 
 " terminal-emulator mode remap
