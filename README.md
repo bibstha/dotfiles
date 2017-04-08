@@ -9,12 +9,14 @@ Contains configurations for
 
 Quick reference
 
-`gap=git add -p`
-`gp=git push`
-`gpd=git push --dry-run`
-`gco=git checkout`
-`gst=git status`
-`gci=git commit -v`
+```
+gap=git add -p
+gp=git push
+gpd=git push --dry-run
+gco=git checkout
+gst=git status
+gc=git commit -v
+```
 
 ## Notes
 
