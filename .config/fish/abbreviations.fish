@@ -21,6 +21,9 @@ abbr_add 'gds=git diff --stat'
 abbr_add 'gmm=git merge master'
 abbr_add 'gba=git branch -a'
 
+abbr_add 'gp=git push'
+abbr_add 'gpd=git push --dry-run'
+
 abbr_add 'v=vim'
 abbr_add 'ev=vim ~/.vimrc'
 abbr_add 'et=vim ~/.tmux.conf'

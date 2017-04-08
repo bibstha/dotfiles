@@ -24,6 +24,7 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
+noremap <Leader>ts :tab split<CR>
 
 set expandtab           " Insert spaces when TAB is pressed.
 set tabstop=2           " Render TABs using this many spaces.
@@ -104,7 +105,12 @@ syntax enable
 set background=light
 colorscheme solarized
 
+noremap <Leader>ec :e ~/.config/nvim/init.vim<CR>
 noremap <Leader>r :source ~/.config/nvim/init.vim<CR>
+noremap <Leader>te :terminal<CR>
+
+" terminal-emulator mode remap
+tnoremap <Esc> <C-\><C-n>
 
 """"""""""""""""""""""""""""""""""""""""
 " Functions
