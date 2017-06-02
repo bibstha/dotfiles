@@ -29,6 +29,7 @@ Plug 'elixir-lang/vim-elixir'
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'junegunn/vim-easy-align'
 
 Plug 'smit1625/vim-rubyhash'
 

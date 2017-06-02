@@ -24,6 +24,7 @@ set shiftwidth=2        " Indentation amount for < and > commands.
 
 " Display extra whitespace
 set list listchars=tab:»·,trail:·,nbsp:·
+autocmd FileType go set nolist
 
 " Search
 set ignorecase          " Make searching case insensitive
@@ -75,7 +76,13 @@ noremap <Leader>sf :source ~/.config/nvim/init.vim<CR>
 noremap <Leader>te :terminal<CR>
 
 " terminal-emulator mode remap
-tnoremap <Esc> <C-\><C-n>
+" tnoremap <Esc> <C-\><C-n>
+
+" vim-easy-align
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
 
 """"""""""""""""""""""""""""""""""""""""
 " Functions

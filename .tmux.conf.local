@@ -1,13 +1,13 @@
-unbind C-b
-set -g prefix C-a
-bind C-a send-prefix
+# unbind C-b
+# set -g prefix C-a
+# bind C-a send-prefix
 
 bind-key -n F2 new-window \; rename-window ""
 bind-key -n F3 display-panes \; split-window -h
 bind-key -n F4 display-panes \; split-window -v
-bind-key -n F7 previous-window
-bind-key -n F8 last-window
-bind-key -n F9 next-window
+bind-key -n F9 previous-window
+bind-key -n F10 last-window
+bind-key -n F11 next-window
 
 # Enable mouse support in ~/.tmux.conf
 # set -g mouse on
