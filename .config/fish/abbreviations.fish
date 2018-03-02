@@ -1,5 +1,6 @@
 # from https://github.com/jcelliott/dotfiles/blob/master/.config/fish/abbreviations.fish
 # Set fish user abbreviations
+abbr_add 'dkc=docker-compose'
 #
 # More git abbreviations can be borrowed from 
 # https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/git/git.plugin.zsh#L41

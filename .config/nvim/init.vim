@@ -25,6 +25,7 @@ set shiftwidth=2        " Indentation amount for < and > commands.
 " Display extra whitespace
 set list listchars=tab:»·,trail:·,nbsp:·
 autocmd FileType go set nolist
+autocmd Filetype php setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4
 
 " Search
 set ignorecase          " Make searching case insensitive
@@ -75,6 +76,8 @@ noremap <Leader>efv :e ~/.config/nvim/init.vim<CR>
 noremap <Leader>sf :source ~/.config/nvim/init.vim<CR>
 noremap <Leader>te :terminal<CR>
 
+nnoremap <Leader>d 0D
+
 " terminal-emulator mode remap
 " tnoremap <Esc> <C-\><C-n>
 
@@ -83,6 +86,9 @@ noremap <Leader>te :terminal<CR>
 xmap ga <Plug>(EasyAlign)
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
+
+" vim-ruby Assignment indent style "variable"
+:let g:ruby_indent_assignment_style = 'variable'
 
 """"""""""""""""""""""""""""""""""""""""
 " Functions

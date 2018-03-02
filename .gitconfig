@@ -11,5 +11,15 @@
 	br = branch
 	ci = commit
 	st = status
+	ctags = !.git/hooks/ctags
 [push]
 	default = current
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[merge]
+	conflictstyle = diff3
+[init]
+	templatedir = ~/.git_template

@@ -46,3 +46,10 @@ GPATH
 GRTAGS
 GTAGS
 TAGS
+
+vendor
+
+
+# RUBY #
+########
+.minitest-perf.db
