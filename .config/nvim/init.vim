@@ -33,10 +33,11 @@ set smartcase           " ... unless the query has capital letters.
 set gdefault            " Use 'g' flag by default with :s/foo/bar/.
 set magic               " Use 'magic' patterns (extended regular expressions).
 
-" Solarized Options
+" Theme Options
+" set termguicolors
 syntax enable
 set background=light
-colorscheme solarized
+colorscheme gruvbox
 
 """""""""""""""""""""""""""""""""
 " Key bindings
