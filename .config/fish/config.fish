@@ -4,6 +4,8 @@
 
 abbr_set
 
+ssh-add -K ~/.ssh/id_rsa
+
 set PATH $HOME/bin /usr/local/opt/coreutils/libexec/gnubin $PATH
 set NVIM_TUI_ENABLE_TRUE_COLOR 1
 
