@@ -34,6 +34,7 @@ Plug 'morhetz/gruvbox'
 " Plug 'hashivim/vim-vagrant'
 " Plug 'ekalinin/Dockerfile.vim'
 " Plug 'elixir-lang/vim-elixir'
+Plug 'janko-m/vim-test'
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'

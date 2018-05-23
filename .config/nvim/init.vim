@@ -91,6 +91,16 @@ nmap ga <Plug>(EasyAlign)
 " vim-ruby Assignment indent style "variable"
 :let g:ruby_indent_assignment_style = 'variable'
 
+" vim-test Shortcuts
+nmap <Leader>tn :TestNearest<CR>
+nmap <Leader>tf :TestFile<CR>
+nmap <Leader>ts :TestSuite<CR>
+nmap <Leader>tl :TestLast<CR>
+nmap <Leader>tg :TestVisit<CR>
+
+" vim-test displatch method
+let test#strategy = "neovim"
+
 """"""""""""""""""""""""""""""""""""""""
 " Functions
 
