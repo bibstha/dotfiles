@@ -100,6 +100,8 @@ nmap <Leader>tg :TestVisit<CR>
 
 " vim-test displatch method
 let test#strategy = "neoterm"
+let g:neoterm_default_mod = 'belowright'
+
 
 """"""""""""""""""""""""""""""""""""""""
 " Functions
