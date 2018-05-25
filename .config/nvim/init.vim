@@ -99,7 +99,7 @@ nmap <Leader>tl :TestLast<CR>
 nmap <Leader>tg :TestVisit<CR>
 
 " vim-test displatch method
-let test#strategy = "neovim"
+let test#strategy = "neoterm"
 
 """"""""""""""""""""""""""""""""""""""""
 " Functions

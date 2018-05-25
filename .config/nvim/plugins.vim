@@ -4,6 +4,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 " Define bundles via Github repos
 Plug 'christoomey/vim-run-interactive'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'kassio/neoterm'
 Plug 'kchmck/vim-coffee-script'
 Plug 'pbrisbin/vim-mkdir'
 " Plug 'vim-syntastic/syntastic'
