@@ -79,6 +79,9 @@ noremap <Leader>te :terminal<CR>
 
 nnoremap <Leader>d 0D
 
+nnoremap <silent> <leader>f :Ag <C-r><C-w><cr>
+xnoremap <leader>f y :Ag <C-r>"<cr>
+
 " terminal-emulator mode remap
 " tnoremap <Esc> <C-\><C-n>
 

@@ -1,1 +1,1 @@
-/Users/bibekshrestha/.local/share/omf/themes/default/fish_prompt.fish
+/Users/bibekshrestha/.local/share/omf/themes/scorphish/fish_prompt.fish
