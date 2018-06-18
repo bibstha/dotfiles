@@ -79,12 +79,14 @@ noremap <Leader>te :terminal<CR>
 
 nnoremap <Leader>d 0D
 
-nnoremap <silent> <leader>f :Ag <C-r><C-w><cr>
-xnoremap <leader>f y :Ag <C-r>"<cr>
+nnoremap <silent> <leader>f :Ag <C-r><C-w><CR>
+xnoremap <leader>f y :Ag <C-r>"<CR>
 
-" terminal-emulator mode remap
-" tnoremap <Esc> <C-\><C-n>
+" terminal-emulator mode remap, make sure it works in FZF pane
+tnoremap <expr> <esc> &filetype == 'fzf' ? "\<esc>" : "\<c-\>\<c-n>"
 
+" check-time for reload
+nnoremap <leader>ct :checktime<CR>
 " vim-easy-align
 " Start interactive EasyAlign in visual mode (e.g. vipga)
 xmap ga <Plug>(EasyAlign)

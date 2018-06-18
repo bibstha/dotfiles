@@ -37,6 +37,7 @@ abbr_add 'grhh=git reset --hard HEAD'
 abbr_add 'gmm=git merge master'
 abbr_add 'gba=git branch -a'
 
+abbr_add 'ggpom=git pull origin master'
 abbr_add 'ggpull=git pull'
 abbr_add 'ggpush=git push'
 abbr_add 'gpd=git push --dry-run'
