@@ -32,3 +32,14 @@ tic $TERM.ti
 
 These commands need to be run inside and outside tmux. Generates xterm-256color.ti (outside tmux) and screen-256color.ti
 (inside tmux).
+
+## OSX Configuration
+
+1. Setup separate folder for Screenshots
+
+```
+mkdir ~/Pictures/Screenshots
+defaults write com.apple.screencapture location ~/Pictures/Screenshots
+```
+
+Then drag and drop the folder to your Dock

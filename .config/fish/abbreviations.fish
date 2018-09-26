@@ -1,5 +1,10 @@
 # from https://github.com/jcelliott/dotfiles/blob/master/.config/fish/abbreviations.fish
 # Set fish user abbreviations
+# dev commands
+abbr_add 'dvu=dev up'
+abbr_add 'dvd=dev down'
+abbr_add 'dvs=dev cd shopify'
+
 abbr_add 'dkc=docker-compose'
 #
 # More git abbreviations can be borrowed from 
