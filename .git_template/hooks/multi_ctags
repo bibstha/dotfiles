@@ -1,0 +1,71 @@
+#!/usr/bin/env ruby
+require 'etc'
+require 'shell'
+
+class MultiRipperTags
+  def process
+    time_method do
+      threads = []
+      file_groups.each_with_index do |files_per_process, i|
+        threads << Thread.new do
+          call_ripper_tags(i, files_per_process)
+        end
+      end
+
+      threads.each(&:join)
+
+      merge_and_sort_and_cleanup
+    end
+  end
+
+  def git_dir
+    %x{git rev-parse --git-dir}.chomp
+  end
+
+  def file_groups
+    ruby_files = %x{git ls-files | grep 'rb$'}.lines.map!(&:chomp)
+    files_per_process = (ruby_files.size.to_f / total_processes).ceil.to_i
+    ruby_files.each_slice(files_per_process)
+  end
+
+  def call_ripper_tags(index, files)
+    tag_file = "#{git_dir}/#{index}.tags"
+
+    puts "Files in this process #{files.size}"
+
+    sh = Shell.new
+    sh.transact do
+      echo(files.join("\n")) |
+        system("ripper-tags --exclude \"vendor\" --tag-relative -L - -f#{tag_file}")
+    end
+  end
+
+  def merge_and_sort_and_cleanup
+    abs_dir = File.absolute_path(git_dir)
+    src_tag_files = total_processes.times.map { |i| "#{abs_dir}/#{i}.tags" }
+    dst_tag_file = "#{abs_dir}/tags"
+    command = "cat #{src_tag_files.join(' ')} | sort -u > #{dst_tag_file}"
+    %x{#{command}}
+
+    src_tag_files.each { |f| File.unlink(f) }
+  end
+
+  def total_processes
+    @total_processes ||= begin
+      processors = Etc.nprocessors
+      puts "Using #{processors} different processes"
+      ruby_files = %x{git ls-files | grep 'rb$'}.lines.map!(&:chomp)
+      [processors.size, ruby_files.size].min
+    end
+  end
+
+  def time_method
+    beginning_time = Time.now
+    yield
+    end_time = Time.now
+    puts "Time elapsed #{end_time - beginning_time} seconds"
+  end
+end
+
+MultiRipperTags.new.process
+

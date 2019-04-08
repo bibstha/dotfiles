@@ -4,7 +4,6 @@ PATH="/usr/local/bin:$PATH"
 dir="`git rev-parse --git-dir`"
 trap 'rm -f "$dir/$$.tags"' EXIT
 echo "Executing ripper tags"
-git ls-files | \
-  ripper-tags --tag-relative -L - -f"$dir/$$.tags" --exclude="*.js" --exclude="*.sql"
-# ctags --tag-relative=yes -L - -f"$dir/$$.tags" --languages=-javascript,sql
+git ls-files | grep '\.rb$' | \
+  ripper-tags --tag-relative -L- -f"$dir/$$.tags"
 mv "$dir/$$.tags" "$dir/tags"
