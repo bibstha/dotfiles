@@ -12,6 +12,8 @@
 	ci = commit
 	st = status
 	ctags = !.git/hooks/ctags
+	mctags = !.git/hooks/multi_ctags
+	pushf = push --force-with-lease
 [push]
 	default = current
 [filter "lfs"]
@@ -23,3 +25,9 @@
 	conflictstyle = diff3
 [init]
 	templatedir = ~/.git_template
+[diff]
+	algorithm = patience
+[protocol]
+	version = 2
+[credential]
+	helper = osxkeychain
