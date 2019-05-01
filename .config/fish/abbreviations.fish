@@ -35,6 +35,7 @@ abbr_add 'gd=git diff'
 abbr_add 'gdc=git diff --cached'
 abbr_add 'gds=git diff --stat'
 
+abbr_add 'gfo=git fetch origin'
 abbr_add 'gfom=git fetch origin master'
 abbr_add 'grfh=git rebase FETCH_HEAD'
 abbr_add 'grhh=git reset --hard HEAD'
