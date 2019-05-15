@@ -1,65 +1,65 @@
 # from https://github.com/jcelliott/dotfiles/blob/master/.config/fish/abbreviations.fish
 # Set fish user abbreviations
 # dev commands
-abbr_add 'dvu=dev up'
-abbr_add 'dvd=dev down'
-abbr_add 'dvs=dev cd shopify'
+abbr -a dvu dev up
+abbr -a dvd dev down
+abbr -a dvs dev cd shopify
 
-abbr_add 'dkc=docker-compose'
+abbr -a dkc docker-compose
 #
 # More git abbreviations can be borrowed from 
 # https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/git/git.plugin.zsh#L41
-abbr_add 'g=git'
-abbr_add 'gst=git status'
-abbr_add 'gc=git commit -v'
-abbr_add 'glg=git log-detail'
-abbr_add 'glb=git log-branch'
-abbr_add 'glgs=git log-summary'
-abbr_add 'ga=git add'
-abbr_add 'gap=git add -p'
+abbr -a g git
+abbr -a gst git status
+abbr -a gc git commit -v
+abbr -a glg git log-detail
+abbr -a glb git log-branch
+abbr -a glgs git log-summary
+abbr -a ga git add
+abbr -a gap git add -p
 
-abbr_add 'glgg=git log --graph'
-abbr_add 'glgga=git log --graph --decorate --all'
-abbr_add 'glgm=git log --graph --max-count=10'
-abbr_add 'glo=git log --oneline --decorate'
-abbr_add "glol=git log --graph --pretty='%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
-abbr_add "glola=git log --graph --pretty='%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all"
-abbr_add 'glog=git log --oneline --decorate --graph'
-abbr_add 'gloga=git log --oneline --decorate --graph --all'
+abbr -a glgg git log --graph
+abbr -a glgga git log --graph --decorate --all
+abbr -a glgm=git log --graph --max-count 10
+abbr -a glo git log --oneline --decorate
+abbr -a glol git log --graph --pretty='%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+abbr -a glola git log --graph --pretty='%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all
+abbr -a glog git log --oneline --decorate --graph
+abbr -a gloga git log --oneline --decorate --graph --all
 
-abbr_add 'gcm=git checkout master'
-abbr_add 'gch=git checkout'
-abbr_add 'gco=git checkout'
-abbr_add 'gcb=git checkout -b'
-abbr_add 'gd=git diff'
-abbr_add 'gdc=git diff --cached'
-abbr_add 'gds=git diff --stat'
+abbr -a gcm git checkout master
+abbr -a gch git checkout
+abbr -a gco git checkout
+abbr -a gcb git checkout -b
+abbr -a gd git diff
+abbr -a gdc git diff --cached
+abbr -a gds git diff --stat
 
-abbr_add 'gfo=git fetch origin'
-abbr_add 'gfom=git fetch origin master'
-abbr_add 'grfh=git rebase FETCH_HEAD'
-abbr_add 'grhh=git reset --hard HEAD'
+abbr -a gfo git fetch origin
+abbr -a gfom git fetch origin master
+abbr -a grfh git rebase FETCH_HEAD
+abbr -a grhh git reset --hard HEAD
 
-abbr_add 'gmm=git merge master'
-abbr_add 'gba=git branch -a'
+abbr -a gmm git merge master
+abbr -a gba git branch -a
 
-abbr_add 'ggpom=git pull origin master'
-abbr_add 'ggpull=git pull'
-abbr_add 'ggpush=git push'
-abbr_add 'gpd=git push --dry-run'
+abbr -a ggpom git pull origin master
+abbr -a ggpull git pull
+abbr -a ggpush git push
+abbr -a gpd git push --dry-run
 
 
 
-abbr_add 'v=vim'
-abbr_add 'ev=vim ~/.vimrc'
-abbr_add 'et=vim ~/.tmux.conf'
-abbr_add 'efc=vim ~/.config/fish/config.fish'
-abbr_add 'efa=vim ~/.config/fish/abbreviations.fish'
-abbr_add 'eff=vim ~/.config/fish/functions'
-abbr_add 'ef=vim ~/.config/fish'
-abbr_add 'efv=vim ~/.config/nvim/init.vim'
+abbr -a v vim
+abbr -a ev vim ~/.vimrc
+abbr -a et vim ~/.tmux.conf
+abbr -a efc vim ~/.config/fish/config.fish
+abbr -a efa vim ~/.config/fish/abbreviations.fish
+abbr -a eff vim ~/.config/fish/functions
+abbr -a ef vim ~/.config/fish
+abbr -a efv vim ~/.config/nvim/init.vim
 
-abbr_add 'sf=source ~/.config/fish/config.fish'
+abbr -a sf source ~/.config/fish/config.fish
 
-abbr_add 'ber=bundle exec rake'
-abbr_add 'be=bundle exec'
+abbr -a ber bundle exec rake
+abbr -a be bundle exec
