@@ -31,6 +31,9 @@ bind -n C-j if-shell "$is_vim" "send-keys C-j" "select-pane -D"
 bind -n C-k if-shell "$is_vim" "send-keys C-k" "select-pane -U"
 bind -n C-l if-shell "$is_vim" "send-keys C-l" "select-pane -R"
 bind -n C-\ if-shell "$is_vim" "send-keys C-\\" "select-pane -l"
+# bind without -n = prefixed with C-b
+# so the following is C-b K
+bind K send-keys -R \; send-keys C-l \; clear-history
 
 set -sg escape-time 0
 set -g status-position top
