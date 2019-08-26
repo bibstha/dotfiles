@@ -10,7 +10,7 @@ bind-key -n F10 last-window
 bind-key -n F11 next-window
 
 # Enable mouse support in ~/.tmux.conf
-# set -g mouse on
+set -g mouse on
 
 # Setup 'v' to begin selection as in Vim
 bind-key -Tcopy-mode-vi v send -X begin-selection

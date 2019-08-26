@@ -53,3 +53,4 @@ vendor
 # RUBY #
 ########
 .minitest-perf.db
+.ruby-version
