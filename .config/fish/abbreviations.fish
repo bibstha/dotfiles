@@ -4,6 +4,7 @@
 abbr -a dvu dev up
 abbr -a dvd dev down
 abbr -a dvs dev cd shopify
+abbr -a dvopr dev open pr
 
 abbr -a dkc docker-compose
 #
