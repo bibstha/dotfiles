@@ -36,7 +36,7 @@ set magic               " Use 'magic' patterns (extended regular expressions).
 " Theme Options
 " set termguicolors
 syntax enable
-set background=light
+set background=dark
 colorscheme gruvbox
 
 """""""""""""""""""""""""""""""""
@@ -104,8 +104,16 @@ nmap <Leader>tl :TestLast<CR>
 nmap <Leader>tg :TestVisit<CR>
 
 " vim-test displatch method
-let test#strategy = "neoterm"
-let g:neoterm_default_mod = 'belowright'
+" let test#strategy = "neoterm"
+" let g:neoterm_default_mod = 'belowright'
+let test#strategy = "tslime"
+let g:tslime_always_current_session = 1
+let g:tslime_always_current_window = 1
+
+" Go to last active tab
+au TabLeave * let g:lasttab = tabpagenr()
+nnoremap <silent> <c-l> :exe "tabn ".g:lasttab<cr>
+vnoremap <silent> <c-l> :exe "tabn ".g:lasttab<cr>
 
 
 """"""""""""""""""""""""""""""""""""""""
