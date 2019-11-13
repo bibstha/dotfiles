@@ -54,3 +54,6 @@ vendor
 ########
 .minitest-perf.db
 .ruby-version
+
+# OTHERS $
+.ignore
