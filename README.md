@@ -43,3 +43,4 @@ defaults write com.apple.screencapture location ~/Pictures/Screenshots
 ```
 
 Then drag and drop the folder to your Dock
+
