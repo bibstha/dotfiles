@@ -49,9 +49,7 @@ abbr -a ggpull git pull
 abbr -a ggpush git push
 abbr -a gpd git push --dry-run
 
-
-
-abbr -a v vim
+abbr -a v nvim
 abbr -a ev vim ~/.vimrc
 abbr -a et vim ~/.tmux.conf
 abbr -a efc vim ~/.config/fish/config.fish
@@ -64,3 +62,6 @@ abbr -a sf source ~/.config/fish/config.fish
 
 abbr -a ber bundle exec rake
 abbr -a be bundle exec
+
+abbr -a ... ../..
+alias whatsmyip "curl -s https://am.i.mullvad.net/json | jq"

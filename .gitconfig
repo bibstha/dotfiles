@@ -6,6 +6,7 @@
 [core]
 	excludesfile = /Users/bibekshrestha/.gitignore_global
 	editor = nvim
+	commitGraph = true
 [alias]
 	co = checkout
 	br = branch

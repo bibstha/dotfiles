@@ -30,6 +30,7 @@ Plug 'moll/vim-bbye'
 " Plug 'rakr/vim-one'
 " Plug 'nlknguyen/papercolor-theme'
 Plug 'morhetz/gruvbox'
+Plug 'cormacrelf/vim-colors-github'
 
 " Plug 'lambdatoast/elm.vim'
 " Plug 'hashivim/vim-vagrant'
@@ -45,6 +46,9 @@ Plug 'junegunn/vim-easy-align'
 Plug 'smit1625/vim-rubyhash'
 
 Plug 'vimwiki/vimwiki'
+
+Plug 'majutsushi/tagbar'
+Plug 'chazy/cscope_maps'
 
 " Initialize plugin system
 call plug#end()

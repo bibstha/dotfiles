@@ -12,6 +12,7 @@ source ~/.config/nvim/plugins.vim
 " Make it obvious where 120 characters is
 set textwidth=120
 set colorcolumn=+1
+au BufRead,BufNewFile *.md setlocal textwidth=80
 
 " Numbers
 set number               " Display line number on curson line
@@ -26,6 +27,9 @@ set shiftwidth=2        " Indentation amount for < and > commands.
 set list listchars=tab:»·,trail:·,nbsp:·
 autocmd FileType go set nolist
 autocmd Filetype php setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4
+autocmd FileType cpp setlocal noexpandtab
+" autocmd FileType c setlocal noexpandtab
+" autocmd FileType h setlocal noexpandtab
 
 " Search
 set ignorecase          " Make searching case insensitive
@@ -112,9 +116,15 @@ let g:tslime_always_current_window = 1
 
 " Go to last active tab
 au TabLeave * let g:lasttab = tabpagenr()
-nnoremap <silent> <c-l> :exe "tabn ".g:lasttab<cr>
-vnoremap <silent> <c-l> :exe "tabn ".g:lasttab<cr>
+nnoremap <silent> <leader>l :exe "tabn ".g:lasttab<cr>
+vnoremap <silent> <leader>l :exe "tabn ".g:lasttab<cr>
 
+" Switch vimwiki to use markdown
+let g:vimwiki_list = [{'path': '~/vimwiki/', 'syntax': 'markdown', 'ext': '.md', 'index': 'Readme'}]
+
+
+" TagBar
+nmap <F8> :TagbarToggle<CR>
 
 """"""""""""""""""""""""""""""""""""""""
 " Functions
