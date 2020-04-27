@@ -30,5 +30,24 @@
 	algorithm = patience
 [protocol]
 	version = 2
+# [pager]
+# 	diff = diff-so-fancy | less --tabs=1,5 -RFX
+# 	show = diff-so-fancy | less --tabs=1,5 -RFX
+# 	branch = diff-so-fancy | less --tabs=1,5 -RFX
+# 	stash = diff-so-fancy | less --tabs=1,5 -RFX
+# 	log = diff-so-fancy | less --tabs=1,5 -RFX
+[gc]
+	writeCommitGraph = true
+[url "https://github.com/Shopify/"]
+	insteadOf = git@github.com:Shopify/
+	insteadOf = git@github.com:shopify/
+	insteadOf = ssh://git@github.com/Shopify/
+	insteadOf = ssh://git@github.com/shopify/
 [credential]
-	helper = osxkeychain
+	helper = store --file /opt/dev/var/private/git_credential_store
+
+[core]
+  pager = delta --theme=GitHub
+
+[interactive]
+	diffFilter = delta --light --color-only

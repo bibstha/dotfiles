@@ -15,7 +15,7 @@ function installpkgs
   brew install fzf neovim fish tmux ripgrep git ctags \
     fd go curl mysql youtube-dl curl cmake docker gdb \
     wget markdown gh hub htop reattach-to-user-namespace \
-    jq sqlite kubernetes-cli wrk
+    jq sqlite kubernetes-cli wrk bat git-delta
 end
 
 function refreshsystem
@@ -24,5 +24,9 @@ function refreshsystem
   brew upgrade fzf neovim fish tmux ripgrep git ctags \
     fd go curl mysql youtube-dl curl cmake docker gdb \
     wget markdown gh hub htop reattach-to-user-namespace \
-    jq sqlite kubernetes-cli wrk
+    jq sqlite kubernetes-cli wrk bat git-delta
+end
+
+function notes
+  vim +VimwikiIndex
 end

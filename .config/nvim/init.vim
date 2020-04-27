@@ -40,7 +40,10 @@ set magic               " Use 'magic' patterns (extended regular expressions).
 " Theme Options
 " set termguicolors
 syntax enable
-set background=dark
+set background=light
+" let g:github_colors_soft = 1
+" let g:github_colors_block_diffmark = 0
+" colorscheme github
 colorscheme gruvbox
 
 """""""""""""""""""""""""""""""""
