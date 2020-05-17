@@ -40,7 +40,8 @@ set magic               " Use 'magic' patterns (extended regular expressions).
 " Theme Options
 " set termguicolors
 syntax enable
-set background=light
+" set background=light
+set background=dark
 " let g:github_colors_soft = 1
 " let g:github_colors_block_diffmark = 0
 " colorscheme github
@@ -124,6 +125,9 @@ vnoremap <silent> <leader>l :exe "tabn ".g:lasttab<cr>
 
 " Switch vimwiki to use markdown
 let g:vimwiki_list = [{'path': '~/vimwiki/', 'syntax': 'markdown', 'ext': '.md', 'index': 'Readme'}]
+
+" Add vimwiki in vim-airline wordcount file types
+let g:airline#extensions#wordcount#filetypes = '\vasciidoc|help|mail|markdown|org|rst|plaintex|tex|text|vimwiki'
 
 
 " TagBar

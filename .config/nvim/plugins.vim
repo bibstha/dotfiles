@@ -50,5 +50,7 @@ Plug 'vimwiki/vimwiki'
 Plug 'majutsushi/tagbar'
 Plug 'chazy/cscope_maps'
 
+Plug 'vim-airline/vim-airline'
+
 " Initialize plugin system
 call plug#end()

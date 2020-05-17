@@ -47,7 +47,7 @@
 	helper = store --file /opt/dev/var/private/git_credential_store
 
 [core]
-  pager = delta --theme=GitHub
+  pager = delta
 
 [interactive]
-	diffFilter = delta --light --color-only
+  diffFilter = delta --color-only
