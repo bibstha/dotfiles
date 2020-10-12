@@ -13,6 +13,7 @@ source ~/.config/nvim/plugins.vim
 set textwidth=120
 set colorcolumn=+1
 au BufRead,BufNewFile *.md setlocal textwidth=80
+au BufRead,BufNewFile *.markdown setlocal textwidth=80
 
 " Numbers
 set number               " Display line number on curson line
@@ -27,7 +28,7 @@ set shiftwidth=2        " Indentation amount for < and > commands.
 set list listchars=tab:»·,trail:·,nbsp:·
 autocmd FileType go set nolist
 autocmd Filetype php setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4
-autocmd FileType cpp setlocal noexpandtab
+" autocmd FileType cpp setlocal noexpandtab
 " autocmd FileType c setlocal noexpandtab
 " autocmd FileType h setlocal noexpandtab
 
@@ -105,11 +106,15 @@ nmap ga <Plug>(EasyAlign)
 :let g:ruby_indent_assignment_style = 'variable'
 
 " vim-test Shortcuts
+let test#go#gotest#options = '-v -count=1' " -v for stdout log and count to disable caching
 nmap <Leader>tn :TestNearest<CR>
 nmap <Leader>tf :TestFile<CR>
 nmap <Leader>ts :TestSuite<CR>
 nmap <Leader>tl :TestLast<CR>
 nmap <Leader>tg :TestVisit<CR>
+
+" vim-go
+au Filetype go nmap <leader>gr :GoRun<CR>
 
 " vim-test displatch method
 " let test#strategy = "neoterm"
@@ -126,8 +131,10 @@ vnoremap <silent> <leader>l :exe "tabn ".g:lasttab<cr>
 " Switch vimwiki to use markdown
 let g:vimwiki_list = [{'path': '~/vimwiki/', 'syntax': 'markdown', 'ext': '.md', 'index': 'Readme'}]
 
+" Vim Airline config
 " Add vimwiki in vim-airline wordcount file types
 let g:airline#extensions#wordcount#filetypes = '\vasciidoc|help|mail|markdown|org|rst|plaintex|tex|text|vimwiki'
+let g:airline#extensions#tabline#enabled = 1
 
 
 " TagBar

@@ -40,6 +40,7 @@ abbr -a gfo git fetch origin
 abbr -a gfom git fetch origin master
 abbr -a grfh git rebase FETCH_HEAD
 abbr -a grhh git reset --hard HEAD
+abbr -a gri git rebase -i
 
 abbr -a gmm git merge master
 abbr -a gba git branch -a
